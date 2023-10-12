@@ -3,6 +3,8 @@ VENV = venv
 PYTHON = $(VENV)/bin/python3
 PIP = $(VENV)/bin/pip
 
+.PHONY: run clean
+
 # Run the app after updating the virtual environment
 run: $(VENV)/bin/activate
 	$(PYTHON) app.py
